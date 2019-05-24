@@ -40,3 +40,90 @@ E uma lista de produtos dentro do atributo **produto**:
          }
       ]
 ```
+
+Como resposta é gerado um **resultadoProduto** com o **idProduto** referente a cada produto enviado:
+
+```
+{
+    "resultadoProduto": [
+        {
+            "idProduto": 17,
+            "servicos": {
+                "cservico": [
+                    {
+                        "codigo": 40010,
+                        "valor": "35,85",
+                        "prazoEntrega": "1",
+                        "valorMaoPropria": "0,00",
+                        "valorAvisoRecebimento": "5,75",
+                        "valorValorDeclarado": "0,00",
+                        "entregaDomiciliar": "S",
+                        "entregaSabado": "S",
+                        "erro": "0",
+                        "msgErro": "",
+                        "valorSemAdicionais": "30,10",
+                        "obsFim": "",
+                        "dataMaxEntrega": null,
+                        "horaMaxEntrega": null
+                    },
+                    {
+                        "codigo": 41106,
+                        "valor": "32,95",
+                        "prazoEntrega": "5",
+                        "valorMaoPropria": "0,00",
+                        "valorAvisoRecebimento": "5,75",
+                        "valorValorDeclarado": "0,00",
+                        "entregaDomiciliar": "S",
+                        "entregaSabado": "N",
+                        "erro": "0",
+                        "msgErro": "",
+                        "valorSemAdicionais": "27,20",
+                        "obsFim": "",
+                        "dataMaxEntrega": null,
+                        "horaMaxEntrega": null
+                    }
+                ]
+            }
+        },
+        {
+            "idProduto": 8,
+            "servicos": {
+                "cservico": [
+                    {
+                        "codigo": 40010,
+                        "valor": "26,95",
+                        "prazoEntrega": "1",
+                        "valorMaoPropria": "0,00",
+                        "valorAvisoRecebimento": "5,75",
+                        "valorValorDeclarado": "0,00",
+                        "entregaDomiciliar": "S",
+                        "entregaSabado": "S",
+                        "erro": "0",
+                        "msgErro": "",
+                        "valorSemAdicionais": "21,20",
+                        "obsFim": "",
+                        "dataMaxEntrega": null,
+                        "horaMaxEntrega": null
+                    },
+                    {
+                        "codigo": 41106,
+                        "valor": "25,55",
+                        "prazoEntrega": "5",
+                        "valorMaoPropria": "0,00",
+                        "valorAvisoRecebimento": "5,75",
+                        "valorValorDeclarado": "0,00",
+                        "entregaDomiciliar": "S",
+                        "entregaSabado": "N",
+                        "erro": "0",
+                        "msgErro": "",
+                        "valorSemAdicionais": "19,80",
+                        "obsFim": "",
+                        "dataMaxEntrega": null,
+                        "horaMaxEntrega": null
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
