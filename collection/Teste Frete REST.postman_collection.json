@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "d425e7e8-1f0e-4cee-9f11-0813dabfe539",
+		"name": "Teste Frete REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/apirest/frete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"empresa\": {\r\n         \"nCdEmpresa\": null,\r\n         \"sDsSenha\": null,\r\n         \"sCepOrigem\": \"96200380\",\r\n         \"sCepDestino\": \"96200100\",\r\n         \"sCdAvisoRecebimento\": \"S\",\r\n         \"nVlValorDeclarado\": \"0\",\r\n         \"sCdMaoPropria\": \"N\"\r\n      },\r\n      \"produto\": [\r\n         {\r\n            \"idProduto\": 17,\r\n            \"nVlPeso\": \"5\",\r\n            \"nCdFormato\": \"1\",\r\n            \"nVlComprimento\": \"18\",\r\n            \"nVlAltura\": \"16\",\r\n            \"nVlLargura\": \"16\",\r\n            \"nVlDiametro\": \"16\"\r\n         },\r\n         {\r\n            \"idProduto\": 8,\r\n            \"nVlPeso\": \"1\",\r\n            \"nCdFormato\": \"1\",\r\n            \"nVlComprimento\": \"16\",\r\n            \"nVlAltura\": \"16\",\r\n            \"nVlLargura\": \"16\",\r\n            \"nVlDiametro\": \"16\"\r\n         }\r\n      ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/apirest/frete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apirest",
+						"frete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
