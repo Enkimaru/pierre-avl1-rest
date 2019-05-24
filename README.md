@@ -5,7 +5,7 @@ https://www.correios.com.br/a-a-z/pdf/calculador-remoto-de-precos-e-prazos/manua
 
 JSON de Request consiste em 2 partes, dados fixos dentro do atributo **empresa**:
 ```
-      "empresa": {
+"empresa": {
          "nCdEmpresa": "",
          "sDsSenha": "",
          "sCepOrigem": "96200380",
@@ -17,7 +17,7 @@ JSON de Request consiste em 2 partes, dados fixos dentro do atributo **empresa**
 ```
 
 E uma lista de produtos dentro do atributo **produto**:
-
+(É adicionado um **idProduto** para ser identificar qual produto está sendo referenciado na resposta)
 ```
 "produto": [
          {
