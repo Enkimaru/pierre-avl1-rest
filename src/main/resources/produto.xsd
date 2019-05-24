@@ -1,0 +1,82 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" 
+xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" 
+xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" 
+xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" elementFormDefault="qualified">
+
+    
+    <xs:element name="ProdutoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="ResultadoProduto" type="tns:cResultadoProduto" />
+          </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+      
+     <xs:complexType name="cResultadoProduto">
+        <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="idProduto" type="xs:int" /> 
+            <xs:element minOccurs="0" maxOccurs="1" name="Servicos" type="tns:ArrayOfCServico" />
+        </xs:sequence>
+     </xs:complexType>
+
+     <xs:complexType name="cResultado">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Servicos" type="tns:ArrayOfCServico" />
+        </xs:sequence>
+      </xs:complexType>
+
+    <xs:element name="CalcPrecoPrazoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="1" name="CalcPrecoPrazoResult" type="tns:cResultado" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CalcPrecoPrazo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="nCdEmpresa" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="sDsSenha" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="nCdServico" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="sCepOrigem" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="sCepDestino" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="nVlPeso" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="nCdFormato" type="xs:int" />
+            <xs:element minOccurs="1" maxOccurs="1" name="nVlComprimento" type="xs:decimal" />
+            <xs:element minOccurs="1" maxOccurs="1" name="nVlAltura" type="xs:decimal" />
+            <xs:element minOccurs="1" maxOccurs="1" name="nVlLargura" type="xs:decimal" />
+            <xs:element minOccurs="1" maxOccurs="1" name="nVlDiametro" type="xs:decimal" />
+            <xs:element minOccurs="0" maxOccurs="1" name="sCdMaoPropria" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="nVlValorDeclarado" type="xs:decimal" />
+            <xs:element minOccurs="0" maxOccurs="1" name="sCdAvisoRecebimento" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+     <xs:complexType name="ArrayOfCServico">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="cServico" type="tns:cServico" />
+        </xs:sequence>
+     </xs:complexType>
+    
+     <xs:complexType name="cServico">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="Codigo" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Valor" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PrazoEntrega" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ValorMaoPropria" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ValorAvisoRecebimento" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ValorValorDeclarado" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EntregaDomiciliar" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EntregaSabado" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Erro" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="MsgErro" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ValorSemAdicionais" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="obsFim" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DataMaxEntrega" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="HoraMaxEntrega" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

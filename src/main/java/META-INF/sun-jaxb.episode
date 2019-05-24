@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2019.05.21 às 10:45:39 AM BRT 
+
+  -->
+  <bindings xmlns:tns="http://tempuri.org/" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.correios.schemas.frete"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoPrazo">
+      <class ref="com.correios.schemas.frete.CalcPrecoPrazo"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoPrazoResponse">
+      <class ref="com.correios.schemas.frete.CalcPrecoPrazoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cResultado">
+      <class ref="com.correios.schemas.frete.CResultado"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoPrazoData">
+      <class ref="com.correios.schemas.frete.CalcPrecoPrazoData"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoPrazoDataResponse">
+      <class ref="com.correios.schemas.frete.CalcPrecoPrazoDataResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoPrazoRestricao">
+      <class ref="com.correios.schemas.frete.CalcPrecoPrazoRestricao"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoPrazoRestricaoResponse">
+      <class ref="com.correios.schemas.frete.CalcPrecoPrazoRestricaoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPreco">
+      <class ref="com.correios.schemas.frete.CalcPreco"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoResponse">
+      <class ref="com.correios.schemas.frete.CalcPrecoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoData">
+      <class ref="com.correios.schemas.frete.CalcPrecoData"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoDataResponse">
+      <class ref="com.correios.schemas.frete.CalcPrecoDataResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrazo">
+      <class ref="com.correios.schemas.frete.CalcPrazo"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrazoResponse">
+      <class ref="com.correios.schemas.frete.CalcPrazoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrazoData">
+      <class ref="com.correios.schemas.frete.CalcPrazoData"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrazoDataResponse">
+      <class ref="com.correios.schemas.frete.CalcPrazoDataResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrazoRestricao">
+      <class ref="com.correios.schemas.frete.CalcPrazoRestricao"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrazoRestricaoResponse">
+      <class ref="com.correios.schemas.frete.CalcPrazoRestricaoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoFAC">
+      <class ref="com.correios.schemas.frete.CalcPrecoFAC"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcPrecoFACResponse">
+      <class ref="com.correios.schemas.frete.CalcPrecoFACResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcDataMaxima">
+      <class ref="com.correios.schemas.frete.CalcDataMaxima"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:CalcDataMaximaResponse">
+      <class ref="com.correios.schemas.frete.CalcDataMaximaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cResultadoObjeto">
+      <class ref="com.correios.schemas.frete.CResultadoObjeto"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:ListaServicos">
+      <class ref="com.correios.schemas.frete.ListaServicos"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:ListaServicosResponse">
+      <class ref="com.correios.schemas.frete.ListaServicosResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cResultadoServicos">
+      <class ref="com.correios.schemas.frete.CResultadoServicos"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:ListaServicosSTAR">
+      <class ref="com.correios.schemas.frete.ListaServicosSTAR"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:ListaServicosSTARResponse">
+      <class ref="com.correios.schemas.frete.ListaServicosSTARResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:VerificaModal">
+      <class ref="com.correios.schemas.frete.VerificaModal"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:VerificaModalResponse">
+      <class ref="com.correios.schemas.frete.VerificaModalResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cResultadoModal">
+      <class ref="com.correios.schemas.frete.CResultadoModal"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getVersao">
+      <class ref="com.correios.schemas.frete.GetVersao"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getVersaoResponse">
+      <class ref="com.correios.schemas.frete.GetVersaoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:versao">
+      <class ref="com.correios.schemas.frete.Versao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ArrayOfCServico">
+      <class ref="com.correios.schemas.frete.ArrayOfCServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cServico">
+      <class ref="com.correios.schemas.frete.CServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ArrayOfCObjeto">
+      <class ref="com.correios.schemas.frete.ArrayOfCObjeto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cObjeto">
+      <class ref="com.correios.schemas.frete.CObjeto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ArrayOfCServicosCalculo">
+      <class ref="com.correios.schemas.frete.ArrayOfCServicosCalculo"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cServicosCalculo">
+      <class ref="com.correios.schemas.frete.CServicosCalculo"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ArrayOfCModal">
+      <class ref="com.correios.schemas.frete.ArrayOfCModal"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cModal">
+      <class ref="com.correios.schemas.frete.CModal"/>
+    </bindings>
+  </bindings>
+</bindings>
